@@ -33,6 +33,14 @@
         column-gap: 25px;
         position: relative;
         flex-wrap: wrap;
+        a {
+            border-bottom: 2px solid transparent;
+            transition: all .2s;
+            &:hover {
+                border-color: $dark-green;
+                transition: all .2s;
+            }
+        }
     }
     &__right {
         width: 40%;
@@ -68,9 +76,9 @@ $font-family_1: "Roboto", "Avenir", sans-serif;
 
 #menuToggle {
 	display: none;
-	position: relative;
-	top: 0;
-	left: 0;
+	position: absolute;
+    top: 60px;
+    left: 40px;
 	z-index: 1;
 	-webkit-user-select: none;
 	user-select: none;
@@ -134,7 +142,10 @@ $font-family_1: "Roboto", "Avenir", sans-serif;
 }
 #menu {
 	position: absolute;
-	width: 430px;
+    width: 100vw;
+    height: 100vh;
+    top: 45px;
+    left: 10px;
 	margin: -100px 0 0 -50px;
 	padding: 50px;
 	padding-top: 125px;

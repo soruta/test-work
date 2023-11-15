@@ -36,6 +36,14 @@
   position: relative;
   flex-wrap: wrap;
 }
+.header__left a {
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s;
+}
+.header__left a:hover {
+  border-color: #56593D;
+  transition: all 0.2s;
+}
 .header__right {
   width: 40%;
   display: flex;
@@ -61,9 +69,9 @@
 
 #menuToggle {
   display: none;
-  position: relative;
-  top: 0;
-  left: 0;
+  position: absolute;
+  top: 60px;
+  left: 40px;
   z-index: 1;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -125,7 +133,10 @@
 
 #menu {
   position: absolute;
-  width: 430px;
+  width: 100vw;
+  height: 100vh;
+  top: 45px;
+  left: 10px;
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
