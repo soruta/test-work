@@ -13,7 +13,39 @@
 <body>
     <header class="header">
         <div class="header__leadge">
-            <nav class="header__nav">
+            <nav role="navigation" class="header__nav">
+                <!-- mob nav -->
+                <div id="menuToggle">
+                    <input type="checkbox"/>
+                  
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  
+                    <ul id="menu">
+                        <div class="dropdown">
+                            <a href="#" class="nav-list">Shop</a>
+                            <div class="dropdown-content">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                            </div>
+                        </div>
+                        <a href="#"><li>Style Quiz</li></a>
+                        <a href="#"><li>About Us</li></a>
+                        <div class="dropdown">
+                            <a href="#" class="nav-list">Stories</a>
+                            <div class="dropdown-content">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                                <a href="#">Link 4</a>
+                                <a href="#">Link 5</a>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+                <!-- // mob nav -->
                 <div class="header__left">
                     <div class="dropdown wow bounceInLeft" data-wow-duration="1s">
                         <a href="#" class="nav-list">Shop</a>
